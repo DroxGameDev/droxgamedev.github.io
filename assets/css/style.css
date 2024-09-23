@@ -233,7 +233,7 @@ body::before {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #384252;
+  color: #e25858;
   text-decoration: none;
 }
 
