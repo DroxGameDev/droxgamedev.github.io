@@ -647,12 +647,23 @@ section .container {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+.projectGrid{
+  display:grid; 
+  grid-template-columns: auto auto; 
+  gap: 10px;
+}
+
+
 @media (max-width: 767px) {
   .services .icon-box h4{
     text-align: center;
   }
   .services .icon-box h5{
     text-align: center;
+  }
+  .projectGrid{
+    grid-template-columns: auto;
   }
 }
 
@@ -661,7 +672,7 @@ section .container {
   background: #e9d6af;
   padding: 40px 40px;
   transition: all ease-in-out 0.3s;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .services .icon-box .icon {
