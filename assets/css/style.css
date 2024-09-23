@@ -654,8 +654,17 @@ section .container {
   gap: 10px;
 }
 
+.services .icon-box .img-fluid{
+  float:left;
+  margin:0 10px 0 0;
+}
+
 
 @media (max-width: 767px) {
+
+  .services .icon-box .img-fluid{
+    float:none;
+  }
   .services .icon-box h4{
     text-align: center;
   }
