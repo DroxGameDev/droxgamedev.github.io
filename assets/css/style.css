@@ -113,6 +113,7 @@ body::before {
 @media (max-width: 992px) {
   #header h1 {
     font-size: 26px;
+    margin-right: 25px;
   }
   #header h2 {
     font-size: 20px;
@@ -335,7 +336,7 @@ section .container {
 }
 
 .section-title h2 {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -346,14 +347,7 @@ section .container {
   font-family: "Poppins", sans-serif;
 }
 
-.section-title h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #dee2e6;
-  margin: 4px 10px;
-}
+
 
 .section-title p {
   margin: 0;
@@ -477,7 +471,7 @@ section .container {
   align-items: center;
   padding: 20px;
   background: rgb(9, 32, 58);
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s; 
 }
 
 
