@@ -655,6 +655,12 @@ section .container {
   gap: 10px;
 }
 
+.jamProjectGrid{
+  display:grid; 
+  grid-template-columns: auto auto auto; 
+  gap: 10px;
+}
+
 .services .icon-box .img-fluid{
   float:left;
   margin:0 10px 0 0;
