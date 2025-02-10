@@ -681,12 +681,16 @@ section .container {
   .projectGrid{
     grid-template-columns: auto;
   }
+
+  .jamProjectGrid{
+    grid-template-columns: auto;
+  }
 }
 
 .services .icon-box {
   text-align: center;
   background: #e9d6af;
-  padding: 40px 40px;
+  padding: 30px 10px 30px 10px;
   transition: all ease-in-out 0.3s;
   margin-bottom: 10px;
 }
@@ -734,7 +738,7 @@ section .container {
 }
 
 .services .icon-box p {
-  line-height: 24px;
+  line-height: 17px;
   font-size: 14px;
   margin-bottom: 0;
 }
