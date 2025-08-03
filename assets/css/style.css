@@ -497,7 +497,7 @@ section .container {
   color: #fff;
 }
 
-.interests .icon-box:hover {
+.interests .icon-box .projects-icon-box:hover {
   background: #ceb073;
 }
 
@@ -651,13 +651,19 @@ section .container {
 
 .projectGrid{
   display:grid; 
-  grid-template-columns: auto auto; 
+  grid-template-columns: auto auto auto; 
   gap: 10px;
 }
 
 .jamProjectGrid{
   display:grid; 
   grid-template-columns: auto auto auto; 
+  gap: 10px;
+}
+
+.otherProjectGrid{
+  display:grid; 
+  grid-template-columns: auto auto ; 
   gap: 10px;
 }
 
@@ -685,6 +691,9 @@ section .container {
   .jamProjectGrid{
     grid-template-columns: auto;
   }
+  .otherProjectGrid{
+    grid-template-columns: auto;
+  }
 }
 
 .services .icon-box {
@@ -693,6 +702,18 @@ section .container {
   padding: 30px 10px 30px 10px;
   transition: all ease-in-out 0.3s;
   margin-bottom: 10px;
+}
+
+.projects-icon-box{
+  text-align: center;
+  background: #e9d6af;
+  padding: 5px 10px 5px 10px;
+  transition: all ease-in-out 0.3s;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .services .icon-box .icon {
@@ -744,6 +765,10 @@ section .container {
 }
 
 .services .icon-box:hover {
+  background: #ceb073;
+  border-color: #384252;
+}
+.services .projects-icon-box:hover {
   background: #ceb073;
   border-color: #384252;
 }
