@@ -651,19 +651,25 @@ section .container {
 
 .projectGrid{
   display:grid; 
-  grid-template-columns: auto auto auto; 
+  grid-template-columns: repeat(3, 1fr); 
   gap: 10px;
 }
 
 .jamProjectGrid{
   display:grid; 
-  grid-template-columns: auto auto auto; 
+  grid-template-columns: repeat(3, 2fr);; 
   gap: 10px;
 }
 
-.otherProjectGrid{
+.documentsGrid{
   display:grid; 
-  grid-template-columns: auto auto ; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+._3dModellingGrid{
+  display:grid; 
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
@@ -691,7 +697,11 @@ section .container {
   .jamProjectGrid{
     grid-template-columns: auto;
   }
-  .otherProjectGrid{
+
+  .documentsGrid{
+    grid-template-columns: auto;
+  }
+  ._3dModellingGrid{
     grid-template-columns: auto;
   }
 }
