@@ -657,7 +657,7 @@ section .container {
 
 .jamProjectGrid{
   display:grid; 
-  grid-template-columns: repeat(3, 2fr);; 
+  grid-template-columns: repeat(3, 1fr);; 
   gap: 10px;
 }
 
@@ -691,18 +691,18 @@ section .container {
     text-align: center;
   }
   .projectGrid{
-    grid-template-columns: auto;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .jamProjectGrid{
-    grid-template-columns: auto;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .documentsGrid{
-    grid-template-columns: auto;
+    grid-template-columns: repeat(1, 1fr);
   }
   ._3dModellingGrid{
-    grid-template-columns: auto;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
