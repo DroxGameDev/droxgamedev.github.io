@@ -655,11 +655,28 @@ section .container {
   gap: 10px;
 }
 
+/*
 .jamProjectGrid{
   display:grid; 
   grid-template-columns: repeat(3, 1fr);; 
   gap: 10px;
 }
+*/
+
+.jamProjectGrid{
+  display:grid; 
+  grid-template-columns: none;
+  grid-auto-flow: column;
+  grid-auto-columns: 300px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  gap: 10px;
+
+  scrollbar-width: thin;
+}
+
 
 .documentsGrid{
   display:grid; 
@@ -668,6 +685,12 @@ section .container {
 }
 
 ._3dModellingGrid{
+  display:grid; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+._ttrpgGrid{
   display:grid; 
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -691,18 +714,73 @@ section .container {
     text-align: center;
   }
   .projectGrid{
-    grid-template-columns: repeat(1, 1fr);
+    display:grid; 
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 350px;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    gap: 10px;
+
+    scrollbar-width: thin;
   }
 
   .jamProjectGrid{
-    grid-template-columns: repeat(1, 1fr);
+
+    display:grid; 
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 350px;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    gap: 10px;
+
+    scrollbar-width: thin;
   }
 
   .documentsGrid{
-    grid-template-columns: repeat(1, 1fr);
+    display:grid; 
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 350px;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    gap: 10px;
+
+    scrollbar-width: thin;
   }
   ._3dModellingGrid{
-    grid-template-columns: repeat(1, 1fr);
+    display:grid; 
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 350px;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    gap: 10px;
+
+    scrollbar-width: thin;
+  }
+
+  ._ttrpgGrid{
+    display:grid; 
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 350px;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    gap: 10px;
+
+    scrollbar-width: thin;
   }
 }
 
