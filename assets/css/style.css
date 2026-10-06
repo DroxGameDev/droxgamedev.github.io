@@ -674,9 +674,8 @@ section .container {
 
   gap: 10px;
 
-  scrollbar-width: thin;
+  scrollbar-width: auto;
 }
-
 
 .documentsGrid{
   display:grid; 
@@ -692,8 +691,16 @@ section .container {
 
 ._ttrpgGrid{
   display:grid; 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: none;
+  grid-auto-flow: column;
+  grid-auto-columns: 300px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
   gap: 10px;
+
+  scrollbar-width: auto;
 }
 
 .services .icon-box .img-fluid{
@@ -724,7 +731,7 @@ section .container {
 
     gap: 10px;
 
-    scrollbar-width: thin;
+    scrollbar-width: auto;
   }
 
   .jamProjectGrid{
@@ -739,7 +746,7 @@ section .container {
 
     gap: 10px;
 
-    scrollbar-width: thin;
+    scrollbar-width: auto;
   }
 
   .documentsGrid{
@@ -780,7 +787,7 @@ section .container {
 
     gap: 10px;
 
-    scrollbar-width: thin;
+    scrollbar-width: auto;
   }
 }
 
