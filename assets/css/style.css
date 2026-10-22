@@ -1091,6 +1091,24 @@ section .container {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+ 
+  .contact .info-box .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact .info-box .social-links a{
+    flex: 0 0 10px;
+  }
+}
+
 .contact .info-box {
   color: #444444;
   padding: 20px;
